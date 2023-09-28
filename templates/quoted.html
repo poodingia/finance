@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes
+{% endblock %}
+
+{% block main %}
+     <div>
+         <p>A share of {{ name }}, {{ symbol }} costs {{ price | usd }} </p>
+         <img src ="{{ url }}">
+     </div>
+     <div>
+        <form action="/append" method="post">
+            <div class="form-group">
+            </div>
+            <button class="btn btn-primary" type="submit" value="{{ symbol }}" name="symbol">Add to watchlist</button>
+        </form>
+     </div>
+{% endblock %}
