@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
-#API_KEY: pk_82c68227facb4f9bb101836cc71aa67b
+#API_KEY: Get from IEX Cloud
 
 # Ensure responses aren't cached
 @app.after_request
